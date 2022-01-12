@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   
   get "/second_product", controller: "products", action: "second_product"
   
-  get "/third_product", controller: "products", action: "third_product"
+  get "/third_product"=> "products#third_product"
 end

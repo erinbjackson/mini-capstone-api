@@ -14,11 +14,11 @@ class ProductsController < ApplicationController
     render json:products.as_json
   end
   def second_product
-    products = Product.all[1]
+    products = Product.second
     render json:products.as_json
   end
   def third_product
-    products = Product.all[2]
+    products = Product.find_by(id: 3)
     render json:products.as_json
   end
 end
