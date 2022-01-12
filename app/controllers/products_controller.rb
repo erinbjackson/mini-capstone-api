@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
     render json:products.as_json
   end
   def third_product
-    products = Product[2]
+    products = Product.all[2]
     render json:products.as_json
   end
 end
